@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import data from './data.js'
+import Book from './book.js'
+import './app.css'
+// import Button from 'react-bootstrap/Button';
 
-console.log(data)
 
 const App = () => {
   
@@ -17,17 +19,7 @@ const App = () => {
   )
 }
 
-const Book = (props) => {
-  const { title, author, description, cover } = props
-  return (
-    <div className="dev">
-      <img src={cover} alt='cover'></img>
-      <h2>{title}</h2>
-      <p>{author}</p>
-      <p>{description}</p>
-    </div>
-  )
-}
+
 
 ReactDOM.render(
     <App />,
