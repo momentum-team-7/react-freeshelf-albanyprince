@@ -13,7 +13,7 @@ const App = () => {
     <main>
       <h1>FREE SHELF</h1>
       {books.map((book) => (
-        <Book title={book.title} author={book.author} description={book.shortDescription} cover={book.coverImageUrl}/>
+        <Book title={book.title} author={book.author} description={book.shortDescription} cover={book.coverImageUrl} publisher={book.publisher} publicationDate={book.publicationDate} detailedDescription={book.detailedDescription}/>
       ))}
     </main>
   )
